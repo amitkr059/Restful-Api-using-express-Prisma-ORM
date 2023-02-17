@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/1
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name":"Dell Pc",
+    "price":999,
+    "categoryId": 3
+}
+
+###
+DELETE http://localhost:3000/api/products/3
+
+###
+PATCH http://localhost:3000/api/products/3
+Content-Type: application/json
+
+{
+    "name": "ipad pro",
+    "price": 899,
+    "categoryId":2
+}
